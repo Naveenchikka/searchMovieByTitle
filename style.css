@@ -1,3 +1,7 @@
+body 
+{
+    background-color:rgba(169, 169, 169, 0.719);
+}
 #main
 {
     text-align: center;
@@ -6,15 +10,65 @@
 #display
 {
     visibility: hidden;
-    margin-left: 100px;
+    
 }
 
-/* .card
+.imgCard
 {
-    display: flex;
+    margin: 2px;
+}
+
+img 
+{
+    border-radius: 10px;
+}
+
+#message 
+{
+    visibility: hidden;
+}
+/* .col-sm-6 
+{
+    
 } */
 
-#details
+/* #details
 {
     margin-left: 300px;
+    justify-content: space-between;
+} */
+
+
+/* .card-body1
+{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+} */
+
+/* .card-body2
+{
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+} */
+
+#poster 
+{
+    height: 500px;
+    width: 400px;
 }
+
+
+
+/* @media screen and (max-width: 600px){
+  .card-body1
+  {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000; 
+  }
+} */

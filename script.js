@@ -19,6 +19,14 @@ async function getdata()
 		{
         createPost(movie);
 		}
+		else 
+		{
+		document.getElementById('message').style.visibility= 'visible';
+		setTimeout(()=>{
+			document.getElementById('message').style.visibility= 'hidden';
+		},5000);
+		 
+		}
 		// if(movie)
 		//     document.getElementsByClassName('card').style.property= 'visible';
 	  } catch (err) {
@@ -43,10 +51,13 @@ function createPost(movie)
 	var img = document.getElementById('poster')
 	img.src = movie.Poster;
 
-	document.getElementById("card-title").innerHTML = ''+movie.Title;
-	document.getElementById("year").innerHTML = ''+movie.Year;
-	document.getElementById("genre").innerHTML = ''+movie.Genre;
-   
+	document.getElementById("name").innerHTML = movie.Title;
+	document.getElementById("dir").innerHTML = movie.Director;
+	document.getElementById("year").innerHTML = movie.Year;
+	document.getElementById("genre").innerHTML = movie.Genre;
+	document.getElementById("plot").innerHTML = movie.Plot;
+    document.getElementById("imdb").innerHTML = movie.imdbRating;
+	document.getElementById("actors").innerHTML = movie.Actors;
 }
 
 function animateScroll(id) {
@@ -54,3 +65,5 @@ function animateScroll(id) {
 	  scrollTop: ($(`#${id}`).offset().top - 50)
 	}, 800);
   }
+
+
