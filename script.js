@@ -1,4 +1,4 @@
-const apiurl = "http://www.omdbapi.com/?apikey=345660a5";
+const apiurl = "https://www.omdbapi.com/?apikey=345660a5";
 
 async function getdata()
 {
